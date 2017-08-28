@@ -1,0 +1,41 @@
+.best{
+    background: url('../img/bg-1.jpg') center no-repeat;
+    background-size: cover;
+  position:relative;
+
+}
+
+
+.best__title{
+text-align:center;
+font-size:70px;
+font-family:'Gagalin';
+margin-bottom:70px;
+}
+.best__list{
+position:relative;
+}
+.best__item{
+display:block;
+width: 300px;
+float:left;
+margin-left:10px;
+
+}
+.best__icon{
+width: 100px; 
+height: 100px;
+text-align:center;
+margin:0 auto;
+}
+	    
+.best__item-title{
+font-family:'Lifehack Medium';
+text-align:center;
+font-size:25px;
+margin-bottom:10px;
+}
+.best__item-text{
+text-align:center;
+font-size:14px;
+}

@@ -1,0 +1,4 @@
+@mixin inlineblock ($valine: top) {
+	display: inline-block;
+	vertical-align: $valine;
+}

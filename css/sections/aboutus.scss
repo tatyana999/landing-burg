@@ -1,0 +1,101 @@
+.aboutus{
+   background: #616161;
+}
+
+.aboutus__list{
+ margin:0;
+ display: flex;
+    flex-wrap: wrap;
+     justify-content:stretch;
+}
+.aboutus__item{
+position:relative;
+    overflow: hidden;
+vertical-align:top; 
+width: 25%;
+height: 325px;
+background-size:cover;
+background-position: 50% 50%;
+	filter: grayscale(100%);
+	 &:hover{
+         .comment{
+display:block;
+
+        }
+    }
+}
+	
+.comment{
+	position:relative;
+	height: 100%;
+	display:none;
+background: rgba(#141414, .7);
+opacity: 1;         
+animation: first 0.3s;
+}
+
+.comment__wrap{
+	position:absolute;
+	width: 80%;
+	height: 70%;
+	top:50%;
+	left:50%;
+	transform:translateX(-50%) translateY(-50%);
+}
+.comment__title{
+	color:$white;
+	font-family:'Gagalin';
+	font-size:14px;
+	margin-bottom:20px;
+}
+.comment__text{
+	color:$white;
+	font-size:12px;
+	font-family: 'Ubuntu-Regular';
+	margin-bottom:20px;
+
+}
+.comment__link{
+	width: 100%;
+	height: 15%;
+	position:relative;
+}
+.comment__but{
+	
+	background-color: rgb(47, 50, 52);
+	opacity:1;
+	float:left;
+	font-size:12px;
+	text-transform:uppercase;
+	color: $white;
+
+text-decoration: none;
+text-align:center;
+font-family:"Ubuntu-Regular";
+border-radius:5px ;
+padding:5px 15px;
+}
+.comment__but:hover{
+	background-color: rgb(31, 33, 34);
+}
+
+@keyframes first {
+	from, 50%, to {
+		animation-timing-function: cubic-bezier(0,0,0.2,0.3);
+	}
+
+	0% {
+		opacity: 0;
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
+
+
+	50% {
+		transform: scale3d(0.97, 0.97, 0.97);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+	}
+}

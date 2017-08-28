@@ -1,0 +1,41 @@
+.first{
+    background: url('../img/bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.first__container {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+}
+
+.first__left{
+float:left;
+width: 50%;
+text-align: center;
+display: block;
+}
+
+.first__right{
+    float:right;
+ width: 50%	;
+    margin-top: 110px;
+    display: block;
+  
+}
+.first__title{
+font-size:70px;
+font-family:'Gagalin';
+ color: $yellow;
+margin-bottom:20px;
+    }
+.first__desc{
+font-family:'Lifehack Medium';
+font-size:60px;
+color:$white;   
+line-height: 1;
+  
+}

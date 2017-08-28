@@ -1,0 +1,73 @@
+
+.footer {
+  background: url('../img/order.jpg')  ;
+ 
+     position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  display: block;
+
+}
+.footer__left{
+  float:left;
+  width:50%;
+height:50px;
+
+}
+.footer__left-adress{
+    font-size: 14px;
+    line-height: 14px;
+    color:$white;
+    position: relative;
+    left: 0;
+    top: 10px;
+}
+.footer__left-telephone{
+  color: $red;
+  font-family: 'Ubuntu-Bold';
+  text-decoration: none;
+  font-size: 14px;
+    position: relative;
+    top:15px;
+   
+ }
+
+ 
+.footer__right{
+float:right;
+  width:50%;
+  height:50px;
+}
+
+
+
+.social__network{
+  position: relative;
+    right: 0;
+  margin-top: 20px;
+   float:right;
+}
+.social__item{
+  display:inline-block;
+  margin-left: 10px;
+
+}
+
+.social__link {
+  display: inline-block;
+  max-width: 23px;
+  max-height: 20px;
+  opacity: 0.3;
+  &:hover {
+    opacity: 1;
+  } 
+}
+
+svg{
+  width: 25px;
+  height: 25px;
+}
+
+

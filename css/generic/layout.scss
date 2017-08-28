@@ -1,0 +1,98 @@
+
+$container-width:940px;
+html,
+body {
+    width: 100%;
+    height: 100%;
+  font-family: 'Ubuntu-Regular', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    background: #f6f6f6;
+    line-height: 1.42;
+    font-size: 16px;
+  
+}
+
+.wrapper {
+    /*min-height: 100%;*/
+    overflow: hidden;
+    position: relative;
+    min-width: $container-width+20px;
+    height: 100%;
+}
+.container{
+  margin:0 auto;
+  height: 100%;
+  width: $container-width;
+  position:relative;
+  top:50%;
+  transform:translateY(-50%);
+
+}
+.maincontent{
+  /*position:relative;*/
+  height: 100%;
+transform: translate3d(0, 0, 0);
+transition: 1s;
+}
+
+footer {
+   min-width: $container-width+20px;;
+    position: relative;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+}
+
+.wrap{
+  margin-top:100px;
+}
+.section{
+  height: 100%;
+  height: 100vh;
+  min-height: 600px;
+ 
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.clearfix:after, .clearfix:before {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.button__position{
+color: $white;
+display:block;
+text-decoration: none;
+text-align:center;
+font-family:"Ubuntu-Regular";
+border-radius:5px ;
+padding:5px 15px;
+}
+p{
+  padding: 0;
+    margin: 0;
+}
+* {
+  box-sizing:border-box;
+}

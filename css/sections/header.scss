@@ -1,0 +1,116 @@
+
+.header {
+    /*padding-top: 12px;
+    height: 90px;*/
+    width: 100% ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+}
+
+.header__logo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background:url("../img/icons/Logo.svg") no-repeat;
+}
+.down-arrow{
+
+     background:no-repeat; 
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 60px;
+    height: 14px;
+    margin-left: -15px;
+    height: 60px;
+  
+
+    &:hover {
+    .arrow-scroll {
+            margin-top: -15px;
+            width: 35px;
+            height: 35px;
+            transition: .3s;
+        }
+     
+    }
+    .arrow-scroll {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+        transform: translate(-50%, -50%);
+        background:no-repeat;
+         transition: .3s;
+      
+    }
+}
+  
+    
+.header__menu {
+    float: right;
+    width: 68%;
+    padding-top: 13px;
+}
+
+.nav {
+    width: 82%;
+    @include inlineblock(middle);
+}
+
+
+
+.nav__list {
+    width: 100%;
+ 
+}
+
+.nav__item {
+    white-space: nowrap;
+    margin-right: 15px;
+    display: block;
+    float: left;
+
+    &:last-child {
+        margin-right: 0;
+        &:after {
+            display: none;
+        }
+    }
+
+    &:after {
+        content: "";
+        @include inlineblock(middle);
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: white;
+        margin-left: 15px;
+    }
+}
+
+.nav__link {
+    @include inlineblock(middle);
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+ 
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.button__position{
+    background: $red;
+    width: 15%;
+   margin:0 auto;
+   float:right;
+  }
+ 
